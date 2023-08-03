@@ -11,6 +11,7 @@
             <div class="row">
 
                 {{-- !TODO Card HERE --}}
+                @include('includes.card')
 
             </div>
             <div class="btn-container">
