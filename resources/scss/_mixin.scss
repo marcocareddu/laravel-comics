@@ -1,0 +1,26 @@
+// Utils
+@mixin img-fluid {
+    max-width: 100%;
+}
+
+@mixin container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flex-center {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin uppercase {
+    text-transform: uppercase;
+}
