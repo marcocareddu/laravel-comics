@@ -13,6 +13,15 @@
 
 <body>
 
+    {{-- Import header --}}
+    @include('includes.header')
+
+
+    {{-- !TODO Main HERE --}}
+
+    {{-- Import footer --}}
+    @include('includes.footer')
+
 </body>
 
 </html>
