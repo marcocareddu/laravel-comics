@@ -17,5 +17,14 @@ Route::get('/', function () {
     $comics = config('comics');
     $bluemenu = config('blueMenu');
     $footermenu = config('footerMenu');
-    return view('home', compact('comics', 'bluemenu', 'footermenu'));
+    $navelements = config('navElements');
+    return view(
+        'home',
+        compact(
+            'comics',
+            'bluemenu',
+            'footermenu',
+            'navelements'
+        )
+    );
 });
