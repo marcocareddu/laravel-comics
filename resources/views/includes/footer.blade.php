@@ -4,22 +4,20 @@
     <div class="upper-foot container">
 
         <!-- Menu link -->
-
-        {{-- !TODO Foreach HERE --}}
-        <div>
-
-            {{-- !TODO Foreach HERE --}}
+        @foreach ($footermenu as $element)
             <div>
-
-                {{-- !TODO Dynamic title --}}
-                <h1>item.title</h1>
-                <ul>
-
-                    {{-- !TODO Dynamic name --}}
-                    <li><a href="#">link . name</a></li>
-                </ul>
+                @foreach ($element as $item)
+                    <div>
+                        <h1>{{ $item['title'] }}</h1>
+                        <ul>
+                            @foreach ($item['link'] as $link)
+                                <li><a href="#">{{ $link['name'] }}</a></li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endforeach
             </div>
-        </div>
+        @endforeach
 
         <div class="big-logo">
         </div>
