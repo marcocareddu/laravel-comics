@@ -2,9 +2,7 @@
 @use 'vars' as *;
 
 footer {
-
-    // !TODO Image HERE
-    // background-image: url(../assets/img/footer-bg.jpg);
+    background-image: url(../img/footer-bg.jpg);
 }
 
 // Upper Footer
@@ -41,10 +39,7 @@ a {
 .big-logo {
     height: 300px;
     width: 400px;
-
-    // !TODO Image HERE
-    // background-image: url(../assets/img/dc-logo-bg.png);
-
+    background-image: url(../img/dc-logo-bg.png);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
