@@ -1,5 +1,8 @@
     <!-- Cards injected -->
-    <div v-for="comic in dcComics" class="col blueband">
-        <img :src="comic.thumb" :alt="comic.type">
-        <p>{{ comic . series }}</p>
-    </div>
+
+    @foreach ($comics as $comic)
+        <div class="col single-card">
+            <img src="{{ $comic['thumb'] }}" alt="{{ $comic['type'] }}">
+            <p>{{ $comic['title'] }}</p>
+        </div>
+    @endforeach
