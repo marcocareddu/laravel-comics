@@ -4,29 +4,29 @@
 .blue-section {
     height: 120px;
     background-color: $blue;
-}
 
-section {
-    height: 100%;
-    @include flex-center;
-    display: flex;
-
-    ul li {
-        padding: 0 10px;
-    }
-
-    img {
-        padding: 0 5px;
-        height: 50px;
-    }
-
-    a {
-        color: white;
+    section {
+        height: 100%;
+        @include flex-center;
         display: flex;
-        align-items: center;
-    }
-}
 
-span {
-    font-size: 0.8rem;
+        ul li {
+            padding: 0 10px;
+        }
+
+        img {
+            padding: 0 5px;
+            height: 50px;
+        }
+
+        a {
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    span {
+        font-size: 0.8rem;
+    }
 }

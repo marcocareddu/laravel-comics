@@ -3,37 +3,38 @@
 
 .main-content {
     background-color: $black;
-}
 
-.btn-container {
-    text-align: center;
-    padding-bottom: 20px;
-}
 
-button {
-    cursor: pointer;
-    padding: 10px 50px;
-    background-color: $blue;
-    color: white;
-    font-weight: 600;
-    font-size: 0.8rem;
-    border: none;
-}
+    .btn-container {
+        text-align: center;
+        padding-bottom: 20px;
+    }
 
-.jumbotron {
-    height: 300px;
-    background-image: url(../img/jumbotron.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+    button {
+        cursor: pointer;
+        padding: 10px 50px;
+        background-color: $blue;
+        color: white;
+        font-weight: 600;
+        font-size: 0.8rem;
+        border: none;
+    }
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
+    .jumbotron {
+        height: 300px;
+        background-image: url(../img/jumbotron.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
-section {
-    height: 100%;
-    color: white;
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    section {
+        height: 100%;
+        color: white;
+    }
 }
