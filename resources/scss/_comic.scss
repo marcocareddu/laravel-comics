@@ -1,0 +1,12 @@
+@use 'mixin' as *;
+
+.comic-content {
+    h1 {
+        color: white;
+    }
+
+    div {
+        color: white;
+        display: flex;
+    }
+}

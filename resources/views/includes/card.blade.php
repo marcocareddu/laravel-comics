@@ -1,5 +1,4 @@
     <!-- Cards injected -->
-
     @foreach ($comics as $key => $comic)
         <div class="col single-card">
 

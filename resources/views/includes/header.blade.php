@@ -3,7 +3,7 @@
 
         <!-- Logo -->
         <div class="logo">
-            <a href="#"><img class="img-fluid" src="{{ Vite::asset('resources/img/dc-logo.png') }}"
+            <a href="{{ route('home') }}"><img class="img-fluid" src="{{ Vite::asset('resources/img/dc-logo.png') }}"
                     alt="Logo DC Comics"></a>
         </div>
 

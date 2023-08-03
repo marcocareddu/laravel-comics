@@ -14,11 +14,15 @@
         <!-- Jumbotron -->
         <div class="jumbotron"></div>
 
-        <div class="container">
+        <div class="container comic-content">
             <h1>{{ $comic['title'] }}</h1>
+            <div>
+                <div class="price">U.S. Price {{ $comic['price'] }}</div>
+                <div>AVAILABLE</div>
+            </div>
+            <p>{{ $comic['description'] }}</p>
+
+
+            </section>
         </div>
-
-
-        </section>
-    </div>
-@endsection
+    @endsection
