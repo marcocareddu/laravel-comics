@@ -4,3 +4,33 @@
 @use "header";
 @use "utils";
 @use "footer";
+
+@use 'mixin' as *;
+
+body {
+    background-color: black;
+    font-family: "Open Sans", sans-serif;
+}
+
+// Utils
+.container {
+    @include container;
+}
+
+img {
+    @include img-fluid;
+}
+
+
+ul {
+    display: flex;
+
+    li {
+        list-style-type: none;
+        padding: 0 5px;
+    }
+}
+
+a {
+    text-decoration: none;
+}
