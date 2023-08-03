@@ -2,7 +2,7 @@
 
     @foreach ($comics as $comic)
         <div class="col single-card">
-            <img src="{{ $comic['thumb'] }}" alt="{{ $comic['type'] }}">
+            <a href="#"><img src="{{ $comic['thumb'] }}" alt="{{ $comic['type'] }}"></a>
             <p>{{ $comic['title'] }}</p>
         </div>
     @endforeach
