@@ -8,7 +8,7 @@
 
     {{-- Import Assets --}}
     @vite('resources/scss/app.scss')
-    <title>Home</title>
+    <title>Title</title>
 </head>
 
 <body>
@@ -16,8 +16,8 @@
     {{-- Import header --}}
     @include('includes.header')
 
-
-    {{-- !TODO Main HERE --}}
+    {{-- Main content --}}
+    <main> @yield('main-content') </main>
 
     {{-- Import footer --}}
     @include('includes.footer')
