@@ -11,7 +11,9 @@
             <ul>
 
                 {{-- !TODO Foreach HERE --}}
-                <li><a></a></li>
+                @foreach ($navelements as $element)
+                    <li><a href="{{ $element['url'] }}"> {{ $element['text'] }} </a></li>
+                @endforeach
             </ul>
         </nav>
 
