@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+// Home Page
 Route::get('/', function () {
     $comics = config('comics');
     $bluemenu = config('blueMenu');
@@ -27,4 +29,20 @@ Route::get('/', function () {
             'navelements'
         )
     );
-});
+})->name('home');
+
+
+// Comic Page
+Route::get('comic', function () {
+    $comics = config('comics');
+    $footermenu = config('footerMenu');
+    $navelements = config('navElements');
+    return view(
+        'comic.comic',
+        compact(
+            'comics',
+            'footermenu',
+            'navelements'
+        )
+    );
+})->name('comic');
