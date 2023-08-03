@@ -19,9 +19,6 @@
     {{-- Main content --}}
     <main> @yield('main-content') </main>
 
-    {{-- Blue menu --}}
-    @include('includes.blueband')
-
     {{-- Import footer --}}
     @include('includes.footer')
 

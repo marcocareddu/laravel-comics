@@ -33,7 +33,7 @@ Route::get('/', function () {
 
 
 // Comic Page
-Route::get('comic', function () {
+Route::get('/comic', function () {
     $comics = config('comics');
     $footermenu = config('footerMenu');
     $navelements = config('navElements');

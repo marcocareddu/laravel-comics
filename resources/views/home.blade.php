@@ -18,5 +18,8 @@
                 <button>LOAD MORE</button>
             </div>
         </section>
+
+        {{-- Blue menu --}}
+        @include('includes.blueband')
     </div>
 @endsection
