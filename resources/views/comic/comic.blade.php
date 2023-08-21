@@ -8,7 +8,7 @@
 
 @extends('layouts.index')
 
-@section('main-content')    
+@section('main-content')
     <div class="main-content">
 
         <!-- Jumbotron -->
@@ -22,20 +22,22 @@
         </div>
 
 
-        <div class="container comic-content">
-            <h1>{{ $comic['title'] }}</h1>
-            <div class="green-band">
-                <div class="price">U.S. Price {{ $comic['price'] }}</div>
-                <div>AVAILABLE</div>
+        <div class="comic-section container">
+            <div class="comic-content">
+                <h1>{{ $comic['title'] }}</h1>
+                <div class="green-band">
+                    <div class="price">U.S. Price <span>{{ $comic['price'] }}</span></div>
+                    <div class="price">AVAILABLE</div>
+                </div>
+                <p>{{ $comic['description'] }}</p>
             </div>
-            <p>{{ $comic['description'] }}</p>
-        </div>
 
-        {{-- ADV Section --}}
-        <div>
-            <div class="adv">
-                <h3>ADVERTISEMENT</h3>
-                <img src="resources/img/adv.jpg" alt="">
+            {{-- ADV Section --}}
+            <div>
+                <div class="adv">
+                    <h3>ADVERTISEMENT</h3>
+                    <img src=" {{ Vite::asset('resources/img/adv.jpg') }} " alt="">
+                </div>
             </div>
         </div>
     @endsection

@@ -9,10 +9,30 @@
     background-color: $blue;;
 }
 
+.comic-section {
+    display: flex;
+    padding: 50px 0;
+
+    .adv {
+        img {
+            max-width: 100%;
+        }
+        h3 {
+            color: $grey;
+            text-align: right;
+            font-size: 0.9rem;
+        }
+    }
+
+}
 .comic-content {
+    flex-basis: 80%;
+    padding-right:50px;
 
     h1 {
-        color: $grey;
+        text-transform: uppercase;
+        color: $darkblue;
+        font-size: 1.8rem;
     }
 
     div {
@@ -21,8 +41,22 @@
     }
 
     .green-band {
+        font-size: 0.9rem;
+        padding: 15px;
+        margin: 20px 0;
         background-color: $green;
         display: flex;
         justify-content: space-between;
+        font-weight: 600
+        ;
+        .price {
+            align-items: center;
+            color: $lightgreen;
+        }
+        span {
+            align-items: center;
+            padding-left: 10px;
+            color: #fff;
+        }
     }
 }
