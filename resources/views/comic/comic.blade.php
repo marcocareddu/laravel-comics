@@ -8,11 +8,19 @@
 
 @extends('layouts.index')
 
-@section('main-content')
+@section('main-content')    
     <div class="main-content">
 
         <!-- Jumbotron -->
         <div class="jumbotron"></div>
+
+        {{-- Blue string --}}
+        <div class="separation">
+            <div class="container">
+                {{-- <img src="{{ $comic['thumb'] }}" alt=""> --}}
+            </div>
+        </div>
+
 
         <div class="container comic-content">
             <h1>{{ $comic['title'] }}</h1>

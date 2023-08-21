@@ -1,9 +1,18 @@
-@use 'mixin' as *;
+@use 'vars' as *;
+
+.main-content {
+    background-color: #fff;
+}
+
+.separation {
+    height: 80px;;
+    background-color: $blue;;
+}
 
 .comic-content {
-    background-color: white;
+
     h1 {
-        color: blue;
+        color: $grey;
     }
 
     div {
@@ -12,9 +21,8 @@
     }
 
     .green-band {
-        background-color: green;
+        background-color: $green;
         display: flex;
         justify-content: space-between;
     }
-
 }
