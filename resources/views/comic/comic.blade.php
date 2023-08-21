@@ -48,7 +48,7 @@
                 {{-- Writers & Artists table --}}
                 <table>
                     <tr>
-                        <th>Talent</th>
+                        <th colspan="2" align="left">Talent</th>
                     </tr>
                     <tr>
                         <td class="title">Art by:</td>
@@ -71,7 +71,7 @@
                 {{-- Info Table --}}
                 <table>
                     <tr>
-                        <th>Specs</th>
+                        <th colspan="2" align="left">Specs</th>
                     </tr>
                     <tr>
                         <td class="title">Series:</td>
