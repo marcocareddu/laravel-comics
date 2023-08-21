@@ -10,7 +10,6 @@
 
 @section('main-content')
     <div class="main-content">
-
         <!-- Jumbotron -->
         <div class="jumbotron"></div>
 
@@ -38,6 +37,56 @@
                     <h3>ADVERTISEMENT</h3>
                     <img src=" {{ Vite::asset('resources/img/adv.jpg') }} " alt="">
                 </div>
+            </div>
+        </div>
+
+        {{-- Info section --}}
+        <div class="info">
+            <div class="container">
+
+
+                {{-- Writers & Artists table --}}
+                <table>
+                    <tr>
+                        <th>Talent</th>
+                    </tr>
+                    <tr>
+                        <td class="title">Art by:</td>
+                        <td>
+                            @foreach ($comic['artists'] as $artist)
+                                <a href="#"> {{ $artist }} </a>
+                            @endforeach
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="title">Written by:</td>
+                        <td>
+                            @foreach ($comic['writers'] as $writer)
+                                <a href="#"> {{ $writer }} </a>
+                            @endforeach
+                        </td>
+                    </tr>
+                </table>
+
+                {{-- Info Table --}}
+                <table>
+                    <tr>
+                        <th>Specs</th>
+                    </tr>
+                    <tr>
+                        <td class="title">Series:</td>
+                        <td>{{ $comic['series'] }}</td>
+                    </tr>
+                    <tr>
+                        <td class="title">U.S. Price:</td>
+                        <td>{{ $comic['price'] }}</td>
+                    </tr>
+                    <tr>
+                        <td class="title">On Sale Date:</td>
+                        <td>{{ $comic['sale_date'] }}</td>
+                    </tr>
+                </table>
+
             </div>
         </div>
     @endsection

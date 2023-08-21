@@ -25,6 +25,7 @@
     }
 
 }
+
 .comic-content {
     flex-basis: 80%;
     padding-right:50px;
@@ -47,16 +48,31 @@
         background-color: $green;
         display: flex;
         justify-content: space-between;
-        font-weight: 600
-        ;
+        font-weight: 600;
+
         .price {
             align-items: center;
             color: $lightgreen;
         }
+        
         span {
             align-items: center;
             padding-left: 10px;
             color: #fff;
         }
+    }
+}
+
+.info {
+    display: flex;
+    height: 300px;
+    background-color: #F6F6F6;
+
+    .container {
+        display: flex;
+    }
+
+    table {
+        flex-basis: 50%;
     }
 }
