@@ -26,6 +26,14 @@
 
 }
 
+.separation {
+    img {
+        height: 200px;
+        position: relative;
+        bottom: 150px;
+    }
+}
+
 .comic-content {
     flex-basis: 80%;
     padding-right:50px;

@@ -16,7 +16,7 @@
         {{-- Blue string --}}
         <div class="separation">
             <div class="container">
-                {{-- <img src="{{ $comic['thumb'] }}" alt=""> --}}
+                <img src="{{ $comic['thumb'] }}" alt="">
             </div>
         </div>
 
