@@ -1,12 +1,20 @@
 @use 'mixin' as *;
 
 .comic-content {
+    background-color: white;
     h1 {
-        color: white;
+        color: blue;
     }
 
     div {
         color: white;
         display: flex;
     }
+
+    .green-band {
+        background-color: green;
+        display: flex;
+        justify-content: space-between;
+    }
+
 }
