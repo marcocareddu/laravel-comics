@@ -33,16 +33,15 @@ Route::get('/', function () {
 
 
 // Comic Page
-Route::get('/comic', function () {
+Route::get('/comic/{index}', function ($index) {
     $comics = config('comics');
+    $comic = $comics[$index];
+
     $footermenu = config('footerMenu');
     $navelements = config('navElements');
-    return view(
-        'comic.comic',
-        compact(
-            'comics',
-            'footermenu',
-            'navelements'
-        )
-    );
+    return view('comic', compact(
+        'comic',
+        'footermenu',
+        'navelements'
+    ));
 })->name('comic');
